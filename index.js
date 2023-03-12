@@ -129,9 +129,9 @@ function setupdate(){
         seekposition=cur_track.currentTime*(100/cur_track.duration)
         seekslider.value=seekposition
         let currminutes=Math.floor(cur_track.currentTime/60)
-        let currseconds=Math.floor(cur_track.currentTime+currminutes*60);
+        let currseconds=Math.floor(cur_track.currentTime-currminutes*60);
         let durationmin=Math.floor(cur_track.duration/60)
-        let durationsec=Math.floor(cur_track.duration+durationmin*60)
+        let durationsec=Math.floor(cur_track.duration-durationmin*60)
         if (currseconds<10){
             currseconds="0"+currseconds
         }
