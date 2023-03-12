@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" 
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <div class="player">
+        <div class="wrapper">
+            <div class="details">
+                <div class="nowplaying">Spotify mini</div>
+                <div class="track-art"></div>
+               
+                <div class="Trackname">Trackname</div>
+                <div class="trackartist">Trackartist</div>
+            </div>
+            <div class="slider">
+                <div class="current-time">00:00
+                </div>
+                <input type="range" min="1"  max="100" value="0" class="seekslider" onchange="seekto()">
+                <div class="duration">00:00</div>
+        
+            </div>
+            <div class="slider">
+                <i class="fa fa-volume-down" aria-hidden="true"></i>
+                
+                <input type="range" min="1"  max="100" value="100" onchange="volumeto()" class="volumeslider">
+                
+        
+            </div>
+            <div class="buttons">
+                
+                <div class="random-track" onclick="randomtrack()">
+                    <i class="fa fa-random" aria-hidden="true"></i>
+                    
+                    
+                </div>
+                <div class="Prev-track" onclick="prevtrack()">
+                    <i class="fa fa-backward" aria-hidden="true"></i>
+                </div>
+                <div class="pause-track" onclick="playpausetrack()">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+
+                </div>
+                <div class="forward-track" onclick="nextTrack()">
+                    <i class="fa fa-forward" aria-hidden="true"></i>
+                </div>
+                <div class="repeat-track" onclick="repeatrack()">
+                    <i class="fa fa-reply" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

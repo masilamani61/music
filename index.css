@@ -1,0 +1,74 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.player{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 35px,rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.track-art{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #fff;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 6px 5px #ccc;
+ 
+    
+}
+.nowplaying{
+    font-size: 1rem;
+}
+.Trackname{
+    font-size: 2rem;
+}
+.trackartist{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.buttons{
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.random-track,.Prev-track,.forward-track,.pause-track,.repeat-track{
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+
+}
+.random-track:hover,.Prev-track:hover,.forward-track:hover,.pause-track:hover,.repeat-track:hover{
+    opacity: 1;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volumeslider{
+    margin-top: 10px;
+    height: 5px;
+    width: 30%;
+}
+.seekslider{
+    height: 5px;
+    width: 80%;
+}
