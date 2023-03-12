@@ -148,6 +148,6 @@ function setupdate(){
 
 
         currtime.textContent=currminutes+':'+currseconds;
-        totalduration.textContent=durationmin+':'+durationmin;
+        totalduration.textContent=durationmin+':'+durationsec;
     }
 }
